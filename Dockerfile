@@ -16,9 +16,9 @@ RUN apt-get install -y \
 WORKDIR /opt
 # download anaconda package
 # archive -> https://repo.continuum.io/archive/
-RUN wget https://repo.continuum.io/archive/Anaconda3-2022.05-Linux-x86_64.sh && \
-  sh /opt/Anaconda3-2022.05-Linux-x86_64.sh -b -p /opt/anaconda3 && \
-  rm -f Anaconda3-2022.05-Linux-x86_64.sh
+RUN wget https://repo.continuum.io/archive/Anaconda3-2023.07-2-Linux-x86_64.sh && \
+  sh /opt/Anaconda3-2023.07-2-Linux-x86_64.sh -b -p /opt/anaconda3 && \
+  rm -f Anaconda3-2023.07-2-Linux-x86_64.sh
 ENV PATH /opt/anaconda3/bin:$PATH
 
 # update pip and conda
